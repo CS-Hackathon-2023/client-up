@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/first_info_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="37dp">
+
+        <TextView
+            android:id="@+id/greeting_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="בוקר טוב"
+            android:textColor="@color/main_text_color"
+            android:textSize="20sp"
+            android:fontFamily="@font/carmelitregular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/patient_name_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="ליאם אדלר"
+            android:textSize="30sp"
+            android:fontFamily="@font/carmelitregular"
+            android:textColor="@color/main_text_color"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/greeting_textview" />
+
+        <TextView
+            android:id="@+id/services_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="שירותים: "
+            android:textColor="@color/main_text_color"
+            android:textSize="25sp"
+            android:fontFamily="@font/carmelitregular"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/patient_name_textview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/services_buttons_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_info_section">
+
+        <Button
+            android:id="@+id/call_nurse_button"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:text="קריאה לאח\ות"
+            android:fontFamily="@font/carmelitregular"
+            android:background="@drawable/main_button_color_1_drawable"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="50dp"
+            app:backgroundTint="@null"
+            />
+
+        <Button
+            android:id="@+id/call_wheel_help_button"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:text="עזרה סיעודית"
+            android:fontFamily="@font/carmelitregular"
+            android:background="@drawable/main_button_color_2_drawable"
+            android:textColor="#ffffff"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/call_nurse_button"
+            android:layout_marginStart="50dp"
+            app:backgroundTint="@null"
+            />
+
+        <Button
+            android:id="@+id/ask_medicine_button"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:text="תרופות"
+            android:fontFamily="@font/carmelitregular"
+            android:background="@drawable/main_button_color_2_drawable"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="@+id/call_nurse_button"
+            app:layout_constraintTop_toBottomOf="@id/call_nurse_button"
+            android:layout_marginTop="25dp"
+            app:backgroundTint="@null"
+            />
+
+        <Button
+            android:id="@+id/call_logistics"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:text="לוגיסטיקה"
+            android:fontFamily="@font/carmelitregular"
+            android:background="@drawable/main_button_color_1_drawable"
+            android:textColor="#ffffff"
+            app:layout_constraintStart_toStartOf="@+id/call_wheel_help_button"
+            app:layout_constraintTop_toTopOf="@+id/ask_medicine_button"
+            app:backgroundTint="@null"
+            />
+
+        <Button
+            android:id="@+id/open_chat_button"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:text="צ'אט"
+            android:fontFamily="@font/carmelitregular"
+            android:background="@drawable/main_button_color_1_drawable"
+            android:textColor="#ffffff"
+            app:layout_constraintEnd_toEndOf="@+id/ask_medicine_button"
+            app:layout_constraintTop_toBottomOf="@id/ask_medicine_button"
+            android:layout_marginTop="25dp"
+            app:backgroundTint="@null"
+            />
+
+        <Button
+            android:id="@+id/call_sos_button"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:text="חירום"
+            android:fontFamily="@font/carmelitbold"
+            android:background="@drawable/main_button_color_sos_drawable"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="@+id/open_chat_button"
+            app:layout_constraintStart_toStartOf="@+id/call_logistics"
+            app:layout_constraintTop_toTopOf="@+id/open_chat_button"
+            app:backgroundTint="@null"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <FrameLayout
+            android:id="@+id/flFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/background_transparent"
+            app:menu="@menu/bottom_nav_menu"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

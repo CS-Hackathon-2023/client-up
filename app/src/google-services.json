@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "772744252838",
+    "firebase_url": "https://technion-cs-hackathon-2023-default-rtdb.firebaseio.com",
+    "project_id": "technion-cs-hackathon-2023",
+    "storage_bucket": "technion-cs-hackathon-2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772744252838:android:1d46c75f66947b95a89367",
+        "android_client_info": {
+          "package_name": "com.example.medicalhackthonjava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772744252838-uf6ml4p05utorjuil9mjtsb2udevj1gn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFjh7gkI1fwJ7dj70mMHSEggENkf3RsO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772744252838-uf6ml4p05utorjuil9mjtsb2udevj1gn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

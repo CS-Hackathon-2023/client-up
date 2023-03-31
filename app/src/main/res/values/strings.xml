@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MedicalHackthonJava</string>
+    <string name="menu_option_1">בית</string>
+    <string name="menu_option_2">הבקשות שלי</string>
+    <string name="menu_option_3">הגדרות</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
