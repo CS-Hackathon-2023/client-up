@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.ImageSpan;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -33,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
                     Intent i = new Intent(getApplicationContext(),RequestsActivity.class);
                     startActivity(i);
                     return true;
+                case R.id.settings:
+                    Intent j = new Intent(getApplicationContext(),SettingsActivity.class);
+                    startActivity(j);
+                    return true;
             }
             return false;
         });
@@ -48,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         request.put("userId", "id"); // "const"
 
         Button call_nurse_button = (Button) findViewById(R.id.call_nurse_button);
+
         call_nurse_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 request.put("requestDetail", "-"); // irrelevant for now

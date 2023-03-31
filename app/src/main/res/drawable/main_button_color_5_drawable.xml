@@ -16,10 +16,10 @@
             <item android:bottom="2dp" android:left="3dp">
                 <shape>
                     <corners android:radius="20dp" />
-                    <solid android:color="@color/main_button_color_2" />
+                    <solid android:color="@color/main_button_color_1" />
                 </shape>
             </item>
-            <item android:drawable="@drawable/handicap_icon"
+            <item android:drawable="@drawable/chat_icon"
                 android:bottom="40dp"
                 android:left="40dp"
                 android:right="40dp"

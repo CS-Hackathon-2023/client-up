@@ -19,6 +19,11 @@
                     <solid android:color="@color/main_button_color_1" />
                 </shape>
             </item>
+            <item android:drawable="@drawable/nurse_icon"
+                android:bottom="40dp"
+                android:left="40dp"
+                android:right="40dp"
+                android:top="40dp"/>
         </layer-list>
     </item>
 
